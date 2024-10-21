@@ -74,8 +74,7 @@ section{
 /*HOME CSS START */
 .home{
     display: flex; /*yazıları ve resmi yanyana hizaladık*/
-    gap: 3rem;
-    
+    gap: 3rem;  
 }
 .home-content{
     display: flex;
@@ -205,5 +204,52 @@ section{
     background-color:var(--second-main-color);
     color: #10375C;
 }
-
-  
+/*HOME CSS END */
+/*WORK CSS START*/
+.work-heading{
+    font-size: 3rem;
+    margin: 5rem 0;
+}
+.timeline-items{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.timeline-items::before{
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 100%;
+    background-color: var(--second-main-color);
+    left: calc(50%);
+}
+.timeline-item{
+    margin-bottom: 40px;
+    width: 100%;
+    position: relative;
+}
+.timeline-item:last-child{
+    margin-bottom: 0;
+}
+.timeline-item:nth-child(odd) {  /*tek sayı olan*/
+   padding-right: 50%;
+}
+.timeline-item:nth-child(even) {  /*çiftsayı olan*/
+    padding-left: calc(50% + 20px);
+ }
+.timeline-dot{
+     width: 16px;
+     height: 16px;
+     border-radius: 50%;
+     position: absolute;
+     background-color: var(--second-main-color);
+     box-shadow: 0 0 8px var(--second-main-color);
+     top: 20px;
+     left: calc(50% - 7px);
+ }
+ .timeline-date{
+    font-size: 1.2rem;
+    font-weight: 600;
+ }
