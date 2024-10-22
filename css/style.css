@@ -205,8 +205,51 @@ section{
     color: #10375C;
 }
 /*HOME CSS END */
+/*EDUCATİON START*/
+.edu-container{
+   max-width: 1200px;   
+}
+.waveContainer{
+    position: relative;
+}
+.img-wave{
+    max-width: 120px;
+    position: absolute;
+    left: -10em;
+    top: -12em;
+}
+.img-wave-end{
+    position: absolute;
+    right: -10em;
+    max-width: 160px;
+}
+.edu-box{
+    background-color: #fff;
+    color: var(--bg2-color);
+    padding: 20px 50px;
+    border-radius: 2rem;
+    box-shadow: 0 0 8px var(--second-main-color);
+    cursor: pointer;
+    transition: 0.4s ease;
+    margin-bottom: 2rem;
+}
+.edu-box:hover{
+  box-shadow: 0 0 14px var(--second-main-color);
+}
+.edu-box h3{
+    font-size: 20px;
+}
+.edu-box h4,.notes{
+    font-size: 14px;
+    color: #000;
+    font-weight: 600;
+}
+.edu-date{
+    font-size: 20px;
+}
+/*EDUCATİON END*/
 /*WORK CSS START*/
-.work-heading{
+.heading{
     font-size: 3rem;
     margin: 5rem 0;
 }
@@ -234,7 +277,7 @@ section{
     margin-bottom: 0;
 }
 .timeline-item:nth-child(odd) {  /*tek sayı olan*/
-   padding-right: 50%;
+   padding-right: calc(50% + 20px);
 }
 .timeline-item:nth-child(even) {  /*çiftsayı olan*/
     padding-left: calc(50% + 20px);
@@ -246,10 +289,39 @@ section{
      position: absolute;
      background-color: var(--second-main-color);
      box-shadow: 0 0 8px var(--second-main-color);
-     top: 20px;
+     top: 10px;
      left: calc(50% - 7px);
  }
  .timeline-date{
     font-size: 1.2rem;
     font-weight: 600;
+    margin: 6px 0 10px 6px;
  }
+ .timeline-content{
+    background-color: var(--bg2-color);
+    padding: 10px 20px;
+    border: 2px solid var(--second-main-color);
+    border-radius: 2rem;
+    box-shadow: 0 0 4px var(--second-main-color);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+ }
+ .timeline-content:hover{
+    transform: scale(1.03);
+    box-shadow: 0 0 6px var(--second-main-color);
+ }
+ .timeline-content h3{
+    font-size: 16px;
+    margin-bottom: 10px;
+ }
+ .timeline-content h4{
+    font-size: 14px ;
+    color: var(--second-main-color);
+    margin-bottom: 5px;
+ }
+ .timeline-content p{
+    font-size: 12px ;
+    letter-spacing: 0.1rem;
+ }
+
+
