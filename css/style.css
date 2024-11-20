@@ -9,7 +9,7 @@
     font-family: "Poppins", sans-serif;
 }
 :root{
-    --bg-color: #325367;
+    --bg-color: #1b2cb2;
     --second-bg-color: #001F3F;
     --bg2-color: #10375C;
     --text-color:#fff;
@@ -151,6 +151,11 @@ section{
     position: relative;
     box-shadow: 0 0 13px var(--second-main-color);
     transition: 0.4s ease-in-out; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem;
+    
 }
 .home-img img:hover{
     cursor: pointer;
@@ -309,13 +314,15 @@ section{
 }
 .card {
     min-width: calc(100% / 4); /* 4 kart için %25 genişlik */
-    box-shadow: 0 0px 4px var(--second-main-color);
+    box-shadow: 0 0px 2px var(--second-main-color);
     box-sizing: border-box;
-    padding: 20px;
     background-color: white;
     color: #001F3F;
     border-radius: 8px;
     margin-right: 8px;
+}
+.card-content{
+    padding: 20px;
 }
 .card img {
     max-width: 100%;
@@ -325,9 +332,8 @@ section{
 .button {
     display: inline-block;
     margin-top: 10px;
-    padding: 10px 20px;
-    background-color: var(--bg2-color);
-    color: white;
+    font-size: 16px;
+    color: var(--bg2-color);
     text-decoration: none;
     border-radius: 5px;
 }
